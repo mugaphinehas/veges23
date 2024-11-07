@@ -1,5 +1,6 @@
 absl-py==2.1.0
 annotated-types==0.7.0
+tensorflow_intel==2.18.0
 anthropic==0.37.1
 anyio==4.6.2.post1
 astunparse==1.6.3
