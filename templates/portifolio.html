@@ -1,0 +1,198 @@
+{% extends "newnavbar.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Poster Designs</title>
+    <link rel="icon" type="image/jpg" href="https://i.pinimg.com/736x/22/de/10/22de109abd84facbf742a9beee450bc2.jpg">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0px;
+            min-height: 100vh;
+            background-color: bisque;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+          
+        }
+        h1 {
+            font-size: 32px;
+            color: orangered;
+            margin-top: 1px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+           
+        }
+        .card-container {
+            display: flex;
+<<<<<<< HEAD
+            flex-direction:flex-start;
+            justify-content: center;
+=======
+            margin-left: 0;
+>>>>>>> 46a9f37 (Fixed bug in feature X)
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            
+           align-items: center;
+            justify-content: center;
+            padding-top: 15px;
+            width: 100%;
+            max-width: 1500px;
+        }
+        .card {
+            width: 325px;
+            margin-top: 80px;
+            height: 400px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card-content {
+            padding: 16px;
+        }
+        .card-content h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .card-content p {
+            color: orangered;
+            line-height: 1.5;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .btn-order {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: beige;
+            text-decoration: none;
+            border-radius: 14px;
+            color: orangered;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+                margin: 10px auto;
+            }
+            .card-container {
+                gap: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+
+            body{
+                min-height: 100vh;
+            }
+            h1{
+                font-size: 17px;
+            }
+            .card {
+                width: 100%;
+                margin-top: 80px;
+            }
+            .card-content h3 {
+                font-size: 20px;
+            }
+            .card-content p {
+                font-size: 13px;
+            }
+            .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            padding-left: 10px;
+            width: 89%;
+            max-width: 1000px;
+            align-items: center;
+            margin: 0 auto;
+        }
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="card-container">
+        
+
+
+
+        
+        <div class="card">
+            <img src="" alt="event t-shirt">
+            <div class="card-content">
+                <h3>event t-shirt</h3>
+                <p>We design a unique, cloud-inspired visual layout with vibrant colors and engaging text.</p>
+                <a href="#" class="btn-order">Order</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="" alt="gas stickers">
+            <div class="card-content">
+                <h3>gas stickers</h3>
+                <p>We design a unique, cloud-inspired visual layout with vibrant colors and engaging text.</p>
+                <a href="#" class="btn-order">Order</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="" alt="album cover design">
+            <div class="card-content">
+                <h3>album cover design</h3>
+                <p>We design a unique, cloud-inspired visual layout with vibrant colors and engaging text.</p>
+                <a href="#" class="btn-order">Order</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="" alt="business card">
+            <div class="card-content">
+                <h3> business card</h3>
+                <p>Modern and innovative designs crafted to stand out and make an impact.</p>
+                <a href="#" class="btn-order">Order</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="" alt="A4 Poster Design">
+            <div class="card-content">
+                <h3>A4 Poster</h3>
+                <p>Creative posters designed with a flair for bold colors and modern styles.</p>
+                <a href="#" class="btn-order">Order</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="" alt="A3 Poster">
+            <div class="card-content">
+                <h3>A3 Poster</h3>
+                <p>Vibrant posters for a standout display, perfect for various promotional needs.</p>
+                <a href="#" class="btn-order">Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

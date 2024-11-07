@@ -1,0 +1,122 @@
+
+    <title>Responsive Footer</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            padding: 80px 13% 70px;
+            background-color: #f8f9fa; /* Light background for footer */
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+            justify-content: space-between;
+            align-items: flex-start; /* Align items to the start */
+            max-width: 1200px; /* Max width for larger screens */
+            margin: 0 auto; /* Center the footer */
+        }
+
+        .footer-content {
+            flex: 1; /* Allow each footer content to grow */
+            min-width: 200px; /* Minimum width to maintain layout */
+            margin: 20px; /* Space between sections */
+        }
+
+        .footer-content img {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .icons {
+            display: flex;
+            gap: 15px; /* Space between icons */
+            margin: 15px 0; /* Space above and below icons */
+        }
+
+        .icons a {
+            color: #333; /* Icon color */
+            font-size: 24px; /* Icon size */
+            transition: color 0.3s; /* Transition for hover effect */
+        }
+
+        .icons a:hover {
+            color: orangered; /* Change color on hover */
+        }
+
+        h3 {
+            margin-top: 0; /* Remove top margin for headings */
+        }
+
+        ul {
+            list-style-type: none; /* Remove default list styles */
+            padding: 0; /* Remove default padding */
+        }
+
+        li {
+            margin: 5px 0; /* Space between list items */
+        }
+
+        a {
+            text-decoration: none; /* Remove underline from links */
+            color: #007BFF; /* Link color */
+            transition: color 0.3s; /* Transition for hover effect */
+        }
+
+        a:hover {
+            color: orangered; /* Change color on hover */
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 5%; /* Adjust padding for smaller screens */
+            }
+
+            .footer {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center items */
+            }
+
+            .footer-content {
+                text-align: center; /* Center text in each section */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!----------------footer section------------------>
+    <section class="footer">
+        <div class="footer-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUpLZY4G_ZM8gYW3Mc68SG3cOUdnTYp1c9VQ&s" alt="Logo">
+            <p>We are here for you guys</p>
+            <div class="icons">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <h3>Let's Talk</h3>
+            <ul>
+                <li><a href="#">Our Projects</a></li>
+                <li><a href="#">What We Do</a></li>
+                <li><a href="#">We Look Like</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-content">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Est 2021</a></li>
+                <li><a href="#">Mugs</a></li>
+                <li><a href="#">T-Shirts</a></li>
+            </ul>
+        </div>
+    </section>
+</body>

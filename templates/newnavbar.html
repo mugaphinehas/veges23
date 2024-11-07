@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>printekInn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/564x/42/0e/d1/420ed16745351189f8a1f6608c62a1f0.jpg">
+    
+   
+   
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        :root {
+            --dark-color: black;
+            --light-color: purple;
+            --accent-color: orangered;
+        }
+
+        body {
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        a {
+            color: var(--dark-color);
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin-inline: auto;
+            padding: 0 32px;
+        }
+
+        .btn {
+            
+           color: white;
+            padding: 8px 32px;
+            display: inline-block;
+            font-weight: 500;
+            transition: all 30ms ease;
+            background-color: orangered;
+            border-radius: 65px;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+
+        nav {
+            position: fixed;
+            left: 0;
+            right: 0;
+            max-width: 1200px;
+            margin-inline: auto;
+            z-index: 5;
+            padding: 16px 32px;
+            background-color: rgba(255,255,255,0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 8px 42px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 23px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .menu-items {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            font-weight: 500;
+        }
+
+        .menu-items a:hover {
+            color: violet;
+        }
+
+        .menu-icon {
+            color: orangered;
+            display: none;
+            cursor: pointer;
+        }
+
+        .menu-icon i {
+            font-size: 30px;
+        }
+      
+        .btn:hover{
+            background-color: black;
+        }
+
+        @media (max-width: 768px) {
+            .menu-items {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: rgba(255,255,255,0.9);
+                padding: 20px;
+            }
+
+            .menu-items.active {
+                display: flex;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="">Graphics.ke </a>
+                </div>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <p>Menu<box-icon name='menu-alt-right'></box-icon></p>
+                    
+                </div>
+                <div class="menu-items">
+                    <a  href="{{url_for('Home')}}">Home</a>
+                    <a href="{{url_for('portifolio')}}" >Portifolio</a>
+                    <a href="{{url_for('aboutus')}}" >About</a>
+                    <a href="{{url_for('contactus')}}">Contact Us</a>
+                    <a href="{{url_for('login')}}" class="btn">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menuItems = document.querySelector('.menu-items');
+            menuItems.classList.toggle('active');
+        }
+    </script>
+    
+
+{% block content %}
+{% endblock %}
+
+
+
+</body>
+</html>

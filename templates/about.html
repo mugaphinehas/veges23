@@ -1,0 +1,112 @@
+{% extends "newnavbar.html" %}
+
+{% block content %}
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: bisque;
+    }
+    .about img{
+        height: auto;
+        width: 420px;
+        margin-top: 80px;
+    }
+    .about-text{
+        width: 550PX;
+        
+
+    }
+    .main{
+        width: 1130px;
+        max-width: 95%;
+        margin: 0px  auto;
+        display: flex;
+        
+      
+
+    }
+    .about-text h1{
+        color: black;
+        font-size: 40px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        margin-left: 23px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: underline;
+        margin-top: 100px;
+    }
+    .about-text h5{
+        color: orangered;
+        font-size: 25x;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+        margin-left: 23px;
+    }
+    span{
+        color: hotpink;
+        margin: 17px;
+        
+
+    }
+    .about-text p{
+        color: orangered;
+        letter-spacing: 1px;
+        line-height: 18px;
+        font-size: 18px;
+        margin-bottom: 45px;
+        margin-left: 23px;
+    }
+    button{
+        background-color:black;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+        margin-left: 23px;
+    }
+    button:hover{
+        color: hotpink;
+    }
+    @media (max-width:480px){
+        .about img{
+            display: none;
+
+        }
+        .body{
+            background-image: url("https://st2.depositphotos.com/2486373/6153/v/450/depositphotos_61537547-stock-illustration-about-us-icon.jpg");
+        }
+    }
+
+</style>
+<body>
+    <section class="about">
+        <div class="main">
+            <img src="https://st2.depositphotos.com/2486373/6153/v/450/depositphotos_61537547-stock-illustration-about-us-icon.jpg" alt="">
+        
+       <div class="about-text">
+        <h1>about us</h1>
+        <h5><span>graphics and aimation</span></h5>
+        <p>
+            Graphic design is a creative process that involves combining images, typography, and colors to communicate a message effectively. <br>
+            It plays a crucial role in branding, advertising, and digital media by visually representing concepts in a way that resonates with the target audience. <br>  To capture attention, evoke emotions, simplify complex ideas, and ensure that visuals are both aesthetically pleasing and strategically effective. 
+             To create impactful and visually engaging content that aligns with brand identity, captivates the audience, and leaves a memorable impression. <br>
+        </p>
+
+        <button>lets talk</button>
+
+      </div>
+    </div>
+    </section>
+  
+</body>
+
+
+
+{% endblock %}
